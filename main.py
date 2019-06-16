@@ -531,10 +531,10 @@ def main():
 
         print("parameter_count =", sess.run(parameter_count))
 
-        if args.checkpoint is not None:
-            print ("loading from checkpoint...")
-            checkpoint = tf.train.latest_checkpoint(args.checkpoint)
-            saver.restore(sess, checkpoint)
+        #if args.checkpoint is not None:
+        #    print ("loading from checkpoint...")
+        #    checkpoint = tf.train.latest_checkpoint(args.checkpoint)
+        #    saver.restore(sess, checkpoint)
 
         if args.mode == "train":
             # training
