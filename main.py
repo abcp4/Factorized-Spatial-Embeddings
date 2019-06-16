@@ -533,7 +533,7 @@ def main():
 
         if args.checkpoint is not None:
             print ("loading from checkpoint...")
-            checkpoint = tf.train.latest_checkpoint('content/Factorized-Spatial-Embeddings/OUTPUT/')
+            checkpoint = tf.train.latest_checkpoint('/content/Factorized-Spatial-Embeddings/OUTPUT/')
             saver.restore(sess, checkpoint)
 
         if args.mode == "train":
